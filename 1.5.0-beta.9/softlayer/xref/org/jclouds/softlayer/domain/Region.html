@@ -47,20 +47,20 @@
 <a class="jxr_linenumber" name="37" href="#37">37</a>  <em class="jxr_javadoccomment"> *      /&gt;</em>
 <a class="jxr_linenumber" name="38" href="#38">38</a>  <em class="jxr_javadoccomment"> */</em>
 <a class="jxr_linenumber" name="39" href="#39">39</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../org/jclouds/softlayer/domain/Region.html">Region</a> <strong class="jxr_keyword">implements</strong> Comparable&lt;Region&gt; {
-<a class="jxr_linenumber" name="40" href="#40">40</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../org/jclouds/softlayer/domain/Region.html">Builder</a> builder() {
-<a class="jxr_linenumber" name="41" href="#41">41</a>        <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> <a href="../../../../org/jclouds/softlayer/domain/Region.html">Builder</a>();
+<a class="jxr_linenumber" name="40" href="#40">40</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../org/jclouds/softlayer/domain/VirtualGuest.html">Builder</a> builder() {
+<a class="jxr_linenumber" name="41" href="#41">41</a>        <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> <a href="../../../../org/jclouds/softlayer/domain/VirtualGuest.html">Builder</a>();
 <a class="jxr_linenumber" name="42" href="#42">42</a>     }
 <a class="jxr_linenumber" name="43" href="#43">43</a>  
-<a class="jxr_linenumber" name="44" href="#44">44</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../org/jclouds/softlayer/domain/Region.html">Builder</a> {
+<a class="jxr_linenumber" name="44" href="#44">44</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../org/jclouds/softlayer/domain/VirtualGuest.html">Builder</a> {
 <a class="jxr_linenumber" name="45" href="#45">45</a>        <strong class="jxr_keyword">private</strong> String keyname;
 <a class="jxr_linenumber" name="46" href="#46">46</a>        <strong class="jxr_keyword">private</strong> String description;
 <a class="jxr_linenumber" name="47" href="#47">47</a>  
-<a class="jxr_linenumber" name="48" href="#48">48</a>        <strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/softlayer/domain/Region.html">Builder</a> keyname(String keyname) {
+<a class="jxr_linenumber" name="48" href="#48">48</a>        <strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/softlayer/domain/VirtualGuest.html">Builder</a> keyname(String keyname) {
 <a class="jxr_linenumber" name="49" href="#49">49</a>           <strong class="jxr_keyword">this</strong>.keyname = keyname;
 <a class="jxr_linenumber" name="50" href="#50">50</a>           <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">this</strong>;
 <a class="jxr_linenumber" name="51" href="#51">51</a>        }
 <a class="jxr_linenumber" name="52" href="#52">52</a>  
-<a class="jxr_linenumber" name="53" href="#53">53</a>        <strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/softlayer/domain/Region.html">Builder</a> description(String description) {
+<a class="jxr_linenumber" name="53" href="#53">53</a>        <strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/softlayer/domain/VirtualGuest.html">Builder</a> description(String description) {
 <a class="jxr_linenumber" name="54" href="#54">54</a>           <strong class="jxr_keyword">this</strong>.description = description;
 <a class="jxr_linenumber" name="55" href="#55">55</a>           <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">this</strong>;
 <a class="jxr_linenumber" name="56" href="#56">56</a>        }
@@ -69,7 +69,7 @@
 <a class="jxr_linenumber" name="59" href="#59">59</a>           <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> <a href="../../../../org/jclouds/softlayer/domain/Region.html">Region</a>(0, keyname, description);
 <a class="jxr_linenumber" name="60" href="#60">60</a>        }
 <a class="jxr_linenumber" name="61" href="#61">61</a>  
-<a class="jxr_linenumber" name="62" href="#62">62</a>        <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../org/jclouds/softlayer/domain/Region.html">Builder</a> fromAddress(<a href="../../../../org/jclouds/softlayer/domain/Region.html">Region</a> in) {
+<a class="jxr_linenumber" name="62" href="#62">62</a>        <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../org/jclouds/softlayer/domain/VirtualGuest.html">Builder</a> fromAddress(<a href="../../../../org/jclouds/softlayer/domain/Region.html">Region</a> in) {
 <a class="jxr_linenumber" name="63" href="#63">63</a>           <strong class="jxr_keyword">return</strong> Region.builder().keyname(in.getKeyname())
 <a class="jxr_linenumber" name="64" href="#64">64</a>                 .description(in.getDescription());
 <a class="jxr_linenumber" name="65" href="#65">65</a>        }
@@ -107,7 +107,7 @@
 <a class="jxr_linenumber" name="97" href="#97">97</a>        <strong class="jxr_keyword">return</strong> description;
 <a class="jxr_linenumber" name="98" href="#98">98</a>     }
 <a class="jxr_linenumber" name="99" href="#99">99</a>  
-<a class="jxr_linenumber" name="100" href="#100">100</a>    <strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/softlayer/domain/Region.html">Builder</a> toBuilder() {
+<a class="jxr_linenumber" name="100" href="#100">100</a>    <strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/softlayer/domain/VirtualGuest.html">Builder</a> toBuilder() {
 <a class="jxr_linenumber" name="101" href="#101">101</a>       <strong class="jxr_keyword">return</strong> Builder.fromAddress(<strong class="jxr_keyword">this</strong>);
 <a class="jxr_linenumber" name="102" href="#102">102</a>    }
 <a class="jxr_linenumber" name="103" href="#103">103</a> 
